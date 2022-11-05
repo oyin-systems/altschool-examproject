@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import Counter from "./components/reducer";
+import CounterOne from "./components/CounterOne";
+import CounterTwo from "./components/CounterTwo";
 import NotFound from "./components/NotFound";
 import { Routes, Route } from "react-router-dom";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -10,7 +11,8 @@ function App() {
     <>
       <ErrorBoundary>
         <Routes>
-          <Route path="/" element={<Counter />} />
+          <Route path="/" element={<CounterOne />} />
+          <Route path="/countertwo" element={<CounterTwo />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </ErrorBoundary>

@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
+import { Link } from 'react-router-dom';
 import "../App.css"
-
 
 const initialState = { count: 0 };
 // The reducer function
@@ -34,8 +34,13 @@ const Counter = () => {
         <button className="buttons" onClick={() => dispatch({ type: "decrement" })}>
           Decrement
         </button>
+        </div>
+        <div className="mini-div">
+        <h3>Click on the button below to see a Custom Counter App</h3>
+        <button className='goback_button'><Link to="/countertwo" className="link">Click Me!</Link></button>
+        </div>
+        
       </div>
-    </div>
   );
 };
 

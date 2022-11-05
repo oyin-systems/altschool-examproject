@@ -71,3 +71,12 @@
   outline: 10px solid white;
   transition-duration: .1s;
 }
+
+.mini-div {
+  margin-top: 30px; 
+  left: 30%;
+}
+.goback_button {
+  position: absolute;
+  left: 42%;
+}
