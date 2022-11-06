@@ -32,7 +32,7 @@ body {
   top: 10%;
   background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
   background-size: 8%;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   text-shadow: 1px 1px 2px rgba(255,255,255,0.25);
 }
@@ -63,7 +63,7 @@ body {
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
-.goback_button .link:hover{
+.goback_button .link:hover {
   background: #69a6ce;
   color: #fff;
 }

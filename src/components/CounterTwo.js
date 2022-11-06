@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../App.css"
 
 function CounterTwo() {
-  const [count, increment, decrement, reset] = useCounter(0);
+  const [count, increment, decrement, reset, setValue] = useCounter(0);
 
   return (
     <div className="counter">
@@ -16,6 +16,7 @@ function CounterTwo() {
       <button className="buttons" onClick={increment}>Increment</button>
       <button className="buttons" onClick={reset}>Reset</button>
       <button className="buttons" onClick={decrement}>Decrement</button>
+      <button className="buttons" onClick={setValue}>Set Value</button>
 </div>
 
       <div className="mini-div">

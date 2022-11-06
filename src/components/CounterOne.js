@@ -12,8 +12,11 @@ function reducer(state, action) {
       return { count: state.count - 1 };
     case "reset":
       return { count: (state.count = 0) };
+      case "setValue":
+        return { count: action.payload };  
     default:
       return { count: state.count };
+      // throw new Error();
   }
 }
 
@@ -34,12 +37,18 @@ const Counter = () => {
         <button className="buttons" onClick={() => dispatch({ type: "decrement" })}>
           Decrement
         </button>
+        <button className="buttons" onClick={(num) => dispatch({ type: "setValue", payload: 5 })}>SetValue</button>
+
         </div>
         <div className="mini-div">
         <h3>Click on the button below to see a Custom Counter App</h3>
         <button className='goback_button'><Link to="/countertwo" className="link">Click Me!</Link></button>
         </div>
         
+        <div className="mini-div2">
+        <h3>Click here to go to Error Boundary Test Page</h3>
+        <button className='goback_button'><Link to="/testerrorboundary" className="link">Click Me!</Link></button>
+        </div>
       </div>
   );
 };
